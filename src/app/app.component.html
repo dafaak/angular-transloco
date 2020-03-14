@@ -1,4 +1,6 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+
+
+<ng-container *transloco="let traduccion; ">
+  {{traduccion('hola')}}
+  <button  (click)="cambiarIdioma()">Cambiar idioma</button>
+  </ng-container>
